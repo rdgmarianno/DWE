@@ -26,13 +26,13 @@
 	$sal_inssA = $sal_bruto *0.92;
 	}
 	
-	if($sal_inssA>0&&$sal_inssA<=1903.98) {
-	$valor_inssA = $sal_bruto-$sal_inssA;
-	echo "Valor a ser pago ao INSS é de 8% do salário bruto, valor da contribuição: <b>R$ $valor_inssA</b> ";  
-	echo "<br/><br/>";
-     	echo "O salário líquido isento de contribuição ao IRRF é de: <strong>R$ $sal_inssA</strong>";
-     	echo "<br/><br/>";
-     	exit();
+		if($sal_inssA>0&&$sal_inssA<=1903.98) {
+		$valor_inssA = $sal_bruto-$sal_inssA;
+		echo "Valor a ser pago ao INSS é de 8% do salário bruto, valor da contribuição: <b>R$ $valor_inssA</b> ";  
+		echo "<br/><br/>";
+     		echo "O salário líquido isento de contribuição ao IRRF é de: <strong>R$ $sal_inssA</strong>";
+     		echo "<br/><br/>";
+     		exit();
 	 	}
 
 	if ($sal_bruto>1596.94&&$sal_bruto<=2594.92) {
@@ -63,15 +63,15 @@
 	    	exit();
 	    	}
 
-  		if ($sal_bruto>2594.92&&$sal_bruto<=5189.82) {
-		$sal_inssC = $sal_bruto*0.89;
-		$valor_inssC = $sal_bruto-$sal_inssC;
-		echo "<br/><br/><strong>*******RESULTADO*******</strong><br/><br/>";
-		echo "<br/>O salário bruto de R$ $sal_bruto, está na faixa salarial C do INSS, com teto máximo para contribuição de R$ 5.189,82"; 
-		echo "<br/>";
-		echo "Valor a ser pago ao INSS ref. 11% do salário bruto é de <b>R$ $valor_inssC</b>";   	
-	 	echo "<br/><br/>";
-		}		
+  	if ($sal_bruto>2594.92&&$sal_bruto<=5189.82) {
+	$sal_inssC = $sal_bruto*0.89;
+	$valor_inssC = $sal_bruto-$sal_inssC;
+	echo "<br/><br/><strong>*******RESULTADO*******</strong><br/><br/>";
+	echo "<br/>O salário bruto de R$ $sal_bruto, está na faixa salarial C do INSS, com teto máximo para contribuição de R$ 5.189,82"; 
+	echo "<br/>";
+	echo "Valor a ser pago ao INSS ref. 11% do salário bruto é de <b>R$ $valor_inssC</b>";   	
+	echo "<br/><br/>";
+	}		
 	
 	if  ($sal_bruto>5189.82) {
 	$sal_inssC = $sal_bruto-(5189.82*0.11);  	
