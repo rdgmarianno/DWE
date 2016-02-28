@@ -88,7 +88,7 @@
 	    	$bruto_irrfB =  $sal_inssC-$sal_irrfB+142.8;
 	    	$desc_total = $sal_bruto-$sal_irrfB;
 	    	echo "<br/>Faixa B do IRRF de 7,5%, contribuição de R$ $bruto_irrfB, menos a dedução de R$ 142,80 = <b>R$ $valor_irrfB</b>"; 
-	    	echo "<br/><br/>Total de descontos entre INSS e IRRF: <b>R$ $desc_total</b>.<br/><br/> Salário líquido final de: <b>R$ $sal_irrfB</b>";	
+	    	echo "<br/><br/>Total de descontos entre INSS e IRRF: <b>R$ $desc_total</b> <br/><br/> Salário líquido final de: <b>R$ $sal_irrfB</b>";	
 		}
 
 	 	elseif ($sal_inssC>2826.65&&$sal_inssC<=3751.05) {
@@ -97,7 +97,7 @@
 	    	$bruto_irrfC =  $sal_inssC-$sal_irrfC+354.8;
 	    	$desc_total = $sal_bruto-$sal_irrfC;
 	    	echo "<br/>Faixa C do IRRF de 15%, contribuição de R$ $bruto_irrfC, menos a dedução de R$ 354,80 = <b>R$ $valor_irrfC</b>"; 
-	    	echo "<br/><br/>Total de descontos entre INSS e IRRF: <b>R$ $desc_total</b>.<br/><br/> Salário líquido final de: <b>R$ $sal_irrfC</b>";	
+	    	echo "<br/><br/>Total de descontos entre INSS e IRRF: <b>R$ $desc_total</b> <br/><br/> Salário líquido final de: <b>R$ $sal_irrfC</b>";	
 	    	}
 
 		if ($sal_inssC>3751.05&&$sal_inssC<=4664.68) {
@@ -106,7 +106,7 @@
 	    	$bruto_irrfD =  $sal_inssC-$sal_irrfD+636.13;
 	    	$desc_total = $sal_bruto-$sal_irrfD;
 	    	echo "<br/>Faixa D do IRRF de 22,5%, contribuição de R$ $bruto_irrfD, menos dedução de R$ 636,13 = <b>R$ $valor_irrfD</b>";
-	    	echo "<br/><br/>Total de descontos entre INSS e IRRF: <b>R$ $desc_total</b>.<br/><br/> Salário líquido final de: <b>R$ $sal_irrfD</b>";	
+	    	echo "<br/><br/>Total de descontos entre INSS e IRRF: <b>R$ $desc_total</b> <br/><br/> Salário líquido final de: <b>R$ $sal_irrfD</b>";	
 	    	}			
 	
 	    	elseif ($sal_inssC>4664.68) {
@@ -114,7 +114,7 @@
 	    	$sal_irrfE= $sal_inssC-$valor_irrfE;
 	    	$desc_total = $sal_bruto-$sal_irrfE;
 	    	echo "<br/>Faixa E do IRRF de 27,5%, menos dedução de R$ 869,36 = <b>R$ $valor_irrfE</b><br/>";
-	    	echo "<br/>Total de descontos entre INSS e IRRF: <b>R$ $desc_total</b>.<br/><br/> Salário líquido final de: <b>R$ $sal_irrfE</b><br/>";	
+	    	echo "<br/>Total de descontos entre INSS e IRRF: <b>R$ $desc_total</b> <br/><br/> Salário líquido final de: <b>R$ $sal_irrfE</b><br/>";	
 	    	}			
 	?>	
   </body>
